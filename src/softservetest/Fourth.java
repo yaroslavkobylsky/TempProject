@@ -10,7 +10,7 @@ public class Fourth {
         /*} catch (ArithmeticException ae){
             System.out.println("Arithmetic Exception");
         }*/
-            System.out.println("finished");
         }
+        System.out.println("finished");
     }
 }
