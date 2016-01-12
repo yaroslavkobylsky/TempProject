@@ -1,6 +1,6 @@
 package softservetest.complextask;
 
-public class HourlyWagedEmployee extends AbstractEmployee {
+public class HourlyWagedEmployee extends FixedPaymentEmployee {
     private Double hourlyRate;
 
     @Override
@@ -8,15 +8,23 @@ public class HourlyWagedEmployee extends AbstractEmployee {
         return 20.8*8*hourlyRate;
     }
 
-    @Override
-    public int compareTo(Object o) {
-        return 0;
-    }
-
     public HourlyWagedEmployee() {
     }
 
+    public HourlyWagedEmployee( Integer id, String name, Double hourlyRate) {
+        super(new Double(0), id, name);
+        this.hourlyRate = hourlyRate;
+    }
+
     public HourlyWagedEmployee(Double hourlyRate) {
+        this.hourlyRate = hourlyRate;
+    }
+
+    public Double getHourlyRate() {
+        return hourlyRate;
+    }
+
+    public void setHourlyRate(Double hourlyRate) {
         this.hourlyRate = hourlyRate;
     }
 }
