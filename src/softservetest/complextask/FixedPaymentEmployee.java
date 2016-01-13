@@ -1,8 +1,9 @@
 package softservetest.complextask;
 
+import java.io.Serializable;
 import java.util.Comparator;
 
-public class FixedPaymentEmployee implements Employee, Comparable {
+public class FixedPaymentEmployee implements Employee, Comparable, Serializable {
     private Double fixedPayment;
     private Integer id;
     private String name;
