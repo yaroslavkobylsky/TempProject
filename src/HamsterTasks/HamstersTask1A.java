@@ -1,7 +1,5 @@
-package HamsterTasks;
+package hamstertasks;
 
-
-import java.io.IOException;
 
 public class HamstersTask1A extends HamstersTask1 {
     public HamstersTask1A() {
