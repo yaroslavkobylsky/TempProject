@@ -1,4 +1,4 @@
-package HamsterTasks;
+package hamstertasks;
 
 import java.util.ArrayList;
 

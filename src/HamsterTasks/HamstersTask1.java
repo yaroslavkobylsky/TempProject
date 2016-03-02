@@ -1,4 +1,4 @@
-package HamsterTasks;
+package hamstertasks;
 
 public class HamstersTask1 {
 
