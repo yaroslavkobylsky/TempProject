@@ -10,9 +10,10 @@ public class EnunsExample {
 
     public static void main(String[] args) {
         EnunsExample enunsExample = new EnunsExample();
-        enunsExample.setEnumField(Enum.FIRST);
+        enunsExample.setEnumField(Enum.SECIND);
         System.out.println(enunsExample.getEnumField());
         System.out.println(Arrays.toString(Enum.values()));
+        System.out.println("enum current value number" + enunsExample.getEnumField().ordinal());
     }
 
     public EnunsExample() {
