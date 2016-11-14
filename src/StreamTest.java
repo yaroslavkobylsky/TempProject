@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 public class StreamTest {
     public static void main(String[] args) {
@@ -29,13 +28,6 @@ public class StreamTest {
 
             System.out.println("array to string: " + Arrays.toString(args3));
 
-
-            /*double average = roster
-                    .stream()
-                    .filter(p -> p.getGender() == Person.Sex.MALE)
-                    .mapToInt(Person::getAge)
-                    .average()
-                    .getAsDouble();*/
         } catch (NumberFormatException e) {
             /*System.out.println("Ошибка в аргументах. Использовать следует так: java Main <число1> <число2> ... ");*/
             System.out.println("HELLO!");
