@@ -1,0 +1,21 @@
+package beans;
+
+import java.math.BigDecimal;
+import java.util.Date;
+import java.util.List;
+
+public class Deal {
+    private Long id;
+    //tags????????????????
+    private String name;
+    private User managedBy; //??????????
+    private String currency;//??????????
+    private BigDecimal budget;
+    //status ??????????????
+    private Date creationDate;
+    private User createdBy;
+    private Date modificationDate;
+    private User modifiedBy;
+
+    private List<DealNote> notes;
+}
