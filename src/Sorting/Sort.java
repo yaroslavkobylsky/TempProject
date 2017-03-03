@@ -46,11 +46,37 @@ public class Sort {
                     list.set(j-1, list.get(j));
                     list.set(j, temp);
                 }
-                else break;
+                else {
+                    break;
+                }
             }
         }
         return list;
     }
+
+    public static List<Long> shellSort(List<Long> list){
+        for (int k = list.size()/2; k > 0; k = k/2 ){
+
+            for (int i=0; i<list.size(); i=i+1){
+
+                for (int j = i; j >k; j=j+k){
+
+                    if (list.get(j) < list.get(j-k)){
+                        Long temp = list.get(j-k);
+                        list.set(j-k, list.get(j));
+                        list.set(j, temp);
+                    }
+                    else {
+                        break;
+                    }
+                }
+
+            }
+        }
+        return list;
+    }
+
+    public static List<Long> fastSort(List<Long> list){return list;}
 
     public static void main(String[] args) {
         List<Long> sortedList = bubbleSort(testList);
@@ -67,5 +93,11 @@ public class Sort {
 
         insertionSort(sortedList);
         System.out.println("insertion sort:" + Arrays.toString(sortedList.toArray()));
+
+        Collections.shuffle(sortedList);
+        System.out.println("shuffled list:" + Arrays.toString(sortedList.toArray()));
+
+        shellSort(sortedList);
+        System.out.println("shell sort:" + Arrays.toString(sortedList.toArray()));
     }
 }
