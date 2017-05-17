@@ -1,8 +1,10 @@
-package hamstertasks;
+package HamsterTasks;
 
 
-public class HamstersTask1A extends HamstersTask1 {
-    public HamstersTask1A() {
+import java.io.IOException;
+
+public class HamstersTask1A /*extends hamstertasks.HamstersTask1*/ {
+   /* public HamstersTask1A() {
         super();
     }
 
@@ -14,7 +16,7 @@ public class HamstersTask1A extends HamstersTask1 {
     public static void main(String[] args) {
         HamstersTask1A hamstersTask1A = new HamstersTask1A();
         hamstersTask1A.method1();
-    }
+    }*/
 
 
 }

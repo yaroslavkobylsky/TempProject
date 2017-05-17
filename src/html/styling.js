@@ -1,0 +1,4 @@
+//changing styles
+$(function () {
+    $
+})

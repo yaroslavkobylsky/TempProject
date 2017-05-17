@@ -1,0 +1,12 @@
+input {
+    background-color: aqua;
+    border-bottom-color: black;
+    border-bottom-width: medium;
+    border-left-style: double;
+    border-radius: 20px;
+}
+
+label {
+    ont-size: x-large;
+    text-align: right;
+}
