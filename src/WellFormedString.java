@@ -10,9 +10,9 @@ public class WellFormedString {
                 case '(': characters.addFirst(c);
                     break;
                 case '{': characters.addFirst(c);
-                    break;;
+                    break;
                 case '[': characters.addFirst(c);
-                    break;;
+                    break;
                 case ')': if (characters.getFirst() != '(') {
                     return 0;
                 }
