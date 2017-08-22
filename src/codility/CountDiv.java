@@ -6,7 +6,7 @@ public class CountDiv {
         for (int i = A; i <= B;){
             if(i%K == 0){
                 counter++;
-                counter = counter + (int)(B-i)/K;
+                counter = counter + (B-i) /K;
                 return counter;
             }
             else {

@@ -1,4 +1,4 @@
 //changing styles
 $(function () {
     $
-})
+});
