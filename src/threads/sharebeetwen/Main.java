@@ -3,7 +3,7 @@ package threads.sharebeetwen;
 import java.util.ArrayList;
 
 public class Main {
-    private static final int NUM_OF_THREADS = 2;
+    private static final int NUM_OF_THREADS = 10;
 
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
